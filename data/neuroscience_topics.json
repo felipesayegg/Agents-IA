@@ -1,0 +1,31 @@
+{
+  "ansiedade": {
+    "explicacao": "A ansiedade está relacionada à ativação constante do sistema de alerta do cérebro. Quando o cérebro interpreta muitas situações como ameaça, ele aumenta o estado de vigilância e diminui a sensação de tranquilidade.",
+    "impacto": "Isso pode gerar dificuldade de concentração, pensamentos acelerados e sensação de pressão interna.",
+    "pratica": "Respiração profunda, divisão de tarefas em etapas menores e pausas conscientes ajudam a reduzir esse estado de alerta."
+  },
+
+  "medo": {
+    "explicacao": "O medo ativa regiões do cérebro responsáveis pela proteção e sobrevivência, como a amígdala cerebral.",
+    "impacto": "Quando ativado constantemente, pode levar a decisões impulsivas ou sensação de bloqueio diante de desafios.",
+    "pratica": "Reconhecer o medo, nomear o que está acontecendo e focar em ações possíveis ajuda o cérebro a recuperar equilíbrio."
+  },
+
+  "cansaco": {
+    "explicacao": "Cansaço físico e mental está ligado à redução da energia cognitiva e ao desgaste do sistema nervoso após esforço prolongado.",
+    "impacto": "Isso pode afetar memória, humor, motivação e capacidade de resolver problemas.",
+    "pratica": "Descanso adequado, pausas ao longo do dia e organização de prioridades ajudam o cérebro a recuperar eficiência."
+  },
+
+  "foco": {
+    "explicacao": "O cérebro humano funciona melhor quando direciona atenção para uma tarefa por vez.",
+    "impacto": "Excesso de estímulos e multitarefa constante reduzem a profundidade da atenção.",
+    "pratica": "Trabalhar em blocos de tempo focado e eliminar distrações ajuda a fortalecer a capacidade de concentração."
+  },
+
+  "sabedoria": {
+    "explicacao": "A tomada de decisão equilibrada envolve o uso do córtex pré-frontal, região ligada ao raciocínio e planejamento.",
+    "impacto": "Decisões impulsivas costumam acontecer quando emoções intensas dominam o processo.",
+    "pratica": "Criar pausas antes de decidir e refletir sobre consequências ajuda a ativar processos cognitivos mais equilibrados."
+  }
+}

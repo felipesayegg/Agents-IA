@@ -1,0 +1,18 @@
+[
+  {
+    "entrada": {
+      "como_me_sinto_hoje": "ansioso e preocupado",
+      "como_acordei": "cansado",
+      "o_que_passou_ontem": "tive um dia muito cheio",
+      "atividades_de_hoje": "trabalho e estudos"
+    },
+    "saida_esperada": {
+      "tema_principal": "ansiedade",
+      "reflexao": "Seu relato indica que você está carregando preocupações e pressão mental para começar o dia.",
+      "versiculo_base": "Filipenses 4:6-7",
+      "orientacao": "A Bíblia convida você a entregar suas preocupações a Deus e confiar que Ele cuida de cada detalhe.",
+      "apoio_neurociencia": "Quando a mente está ansiosa, o cérebro entra em estado de alerta constante, dificultando foco e tranquilidade.",
+      "pratica_para_hoje": "Organize suas tarefas em pequenas etapas e respire profundamente antes de iniciar atividades importantes."
+    }
+  }
+]

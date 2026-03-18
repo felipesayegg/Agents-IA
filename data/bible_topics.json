@@ -1,0 +1,96 @@
+{
+  "ansiedade": {
+    "descricao": "Estado emocional marcado por preocupação excessiva, antecipação negativa e sensação de pressão mental diante do futuro ou de responsabilidades.",
+    "versiculos": [
+      {
+        "referencia": "Filipenses 4:6-7",
+        "texto": "Não andeis ansiosos por coisa alguma; antes, em tudo, sejam os vossos pedidos conhecidos diante de Deus pela oração e súplica com ações de graças."
+      },
+      {
+        "referencia": "Mateus 6:34",
+        "texto": "Portanto, não vos inquieteis com o dia de amanhã, pois o amanhã trará os seus cuidados."
+      },
+      {
+        "referencia": "1 Pedro 5:7",
+        "texto": "Lançando sobre ele toda a vossa ansiedade, porque ele tem cuidado de vós."
+      }
+    ],
+    "mensagem": "Deus convida o coração ansioso a trocar o peso da preocupação pela confiança e pela entrega em oração."
+  },
+
+  "medo": {
+    "descricao": "Sensação de insegurança ou ameaça que pode surgir diante de desafios, decisões importantes ou momentos de incerteza.",
+    "versiculos": [
+      {
+        "referencia": "Isaías 41:10",
+        "texto": "Não temas, porque eu sou contigo; não te assombres, porque eu sou teu Deus."
+      },
+      {
+        "referencia": "Salmos 56:3",
+        "texto": "Em me vindo o temor, hei de confiar em ti."
+      },
+      {
+        "referencia": "Josué 1:9",
+        "texto": "Sê forte e corajoso; não temas nem te espantes, porque o Senhor teu Deus é contigo por onde quer que andares."
+      }
+    ],
+    "mensagem": "Mesmo quando o medo surge, a presença de Deus oferece segurança e coragem para seguir em frente."
+  },
+
+  "cansaco": {
+    "descricao": "Estado de exaustão física ou emocional causado por excesso de responsabilidades, falta de descanso ou sobrecarga mental.",
+    "versiculos": [
+      {
+        "referencia": "Mateus 11:28",
+        "texto": "Vinde a mim, todos os que estais cansados e oprimidos, e eu vos aliviarei."
+      },
+      {
+        "referencia": "Salmos 23:1-3",
+        "texto": "O Senhor é o meu pastor; nada me faltará. Deitar-me faz em verdes pastos e refrigera a minha alma."
+      },
+      {
+        "referencia": "Isaías 40:31",
+        "texto": "Mas os que esperam no Senhor renovarão as suas forças."
+      }
+    ],
+    "mensagem": "Deus oferece descanso e renovação para quem está sobrecarregado."
+  },
+
+  "foco": {
+    "descricao": "Necessidade de direção, disciplina e atenção para realizar tarefas importantes sem se perder em distrações.",
+    "versiculos": [
+      {
+        "referencia": "Colossenses 3:23",
+        "texto": "Tudo o que fizerem, façam de todo o coração, como para o Senhor."
+      },
+      {
+        "referencia": "Provérbios 4:25",
+        "texto": "Olhe sempre para frente, mantenha o olhar fixo no que está diante de você."
+      },
+      {
+        "referencia": "1 Coríntios 14:40",
+        "texto": "Mas tudo seja feito com decência e ordem."
+      }
+    ],
+    "mensagem": "A disciplina e a clareza de propósito ajudam a direcionar a mente para aquilo que realmente importa."
+  },
+
+  "sabedoria": {
+    "descricao": "Busca por discernimento para tomar decisões corretas e agir com prudência diante das situações da vida.",
+    "versiculos": [
+      {
+        "referencia": "Tiago 1:5",
+        "texto": "Se alguém tem falta de sabedoria, peça-a a Deus."
+      },
+      {
+        "referencia": "Provérbios 3:5-6",
+        "texto": "Confia no Senhor de todo o teu coração e não te estribes no teu próprio entendimento."
+      },
+      {
+        "referencia": "Provérbios 2:6",
+        "texto": "Porque o Senhor dá a sabedoria; da sua boca procedem o conhecimento e o entendimento."
+      }
+    ],
+    "mensagem": "A verdadeira sabedoria começa quando buscamos direção em Deus."
+  }
+}
