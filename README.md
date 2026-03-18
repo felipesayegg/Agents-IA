@@ -1,125 +1,134 @@
 ## Checkpoint IA Generativa - Comparativo de Frameworks de Agentes
 
-Este projeto foi desenvolvido para mostrar, de forma pratica, como diferentes frameworks resolvem problemas parecidos com arquiteturas diferentes.
+Este repositório apresenta quatro implementações de agentes de IA, cada uma construída com um framework diferente, para comparar arquitetura, experiência de desenvolvimento e adequação ao problema.
 
-Objetivo principal:
+## Problema que os agentes resolvem
 
-- Construir agentes funcionais
-- Integrar com fontes de dados locais e externas
-- Comparar estilo de orquestracao entre frameworks
+Este trabalho ataca um problema comum em produtos com IA:
 
-## Visao humana do que foi feito
+- Como transformar entrada de usuário e fontes externas em respostas úteis, rastreáveis e fáceis de manter.
 
-Ao inves de fazer tudo igual em todos os frameworks, a estrategia foi:
+Para isso, o projeto foi dividido em quatro cenários práticos:
 
-1. Consolidar uma base neurodevocional no LangChain
-2. Evoluir para multiagente no CrewAI
-3. Trocar de dominio no LangGraph para destacar grafo de estados
-4. Trocar de dominio no LlamaIndex para destacar indexacao e sintese documental
+1. LangChain: orientação neurodevocional com tools e memória.
+2. CrewAI: mesma proposta neurodevocional, mas com colaboração entre agentes especializados.
+3. LangGraph: planejamento de viagem com pipeline por nós e estado explícito.
+4. LlamaIndex: análise e resumo de notícias a partir de múltiplas fontes indexadas.
 
-Isso deixa a apresentacao mais madura, porque mostra decisao de arquitetura e nao apenas repeticao de codigo.
+## Workflow principal (onde cada framework foi usado)
 
-## Versao 1 - LangChain
+```mermaid
+flowchart LR
+    A[Usuario] --> B[LangChain: Neurodevocional]
+    A --> C[CrewAI: Neurodevocional Multiagente]
+    A --> D[LangGraph: Planejamento de Viagens]
+    A --> E[LlamaIndex: Analise de Noticias]
 
-Pasta: [langchain_version](langchain_version)
+    B --> B1[Tools locais JSON]
+    B --> B2[Memoria conversacional]
 
-Tema: Neurodevocional AI
+    C --> C1[Agente Analista]
+    C --> C2[Agente Conselheiro]
+    C --> C3[APIs externas + dados locais]
 
-Por que usar LangChain aqui:
+    D --> D1[No 1: Destino]
+    D --> D2[No 2: Clima]
+    D --> D3[No 3: Atracoes]
+    D --> D4[No 4: Custo]
+    D --> D5[No 5: Relatorio]
 
-- Facilita criar agente com tools e memoria
-- Permite controlar bem o fluxo de entrada e resposta
-- Muito bom para um primeiro MVP com consistencia
+    E --> E1[Ingestao API noticias]
+    E --> E2[Indexacao de documentos]
+    E --> E3[Sintese executiva]
+```
 
-Como funciona:
+## Estrutura do repositório
 
-- Usuario faz check-in emocional
-- Agente consulta base local (JSON biblico + neurociencia)
-- Resposta e gerada em formato pratico para o dia
+- [langchain_version](langchain_version): versão LangChain
+- [crewai_version](crewai_version): versão CrewAI
+- [langgraph_version](langgraph_version): versão LangGraph
+- [llamaindex_version](llamaindex_version): versão LlamaIndex
+- [data](data): base local em JSON
+- [tests](tests): arquivos de teste
 
-## Versao 2 - CrewAI
+## Como configurar e executar
 
-Pasta: [crewai_version](crewai_version)
+Cada framework usa ambiente virtual próprio para evitar conflitos de dependências.
 
-Tema: Neurodevocional AI (mesmo dominio, orquestracao diferente)
+### 1) LangChain
 
-Por que usar CrewAI:
+```powershell
+cd "C:\Users\felip_qx82fss\OneDrive\Área de Trabalho\Checkponit Ia Generativa agents\neurodevocional-ai"
+python -m venv venv
+.\venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+cd langchain_version
+streamlit run streamlit_app.py --server.port 8501
+```
 
-- Destacar colaboracao entre papeis especializados
-- Separar analise emocional e construcao de resposta final
+### 2) CrewAI
 
-Como funciona:
+```powershell
+cd "C:\Users\felip_qx82fss\OneDrive\Área de Trabalho\Checkponit Ia Generativa agents\neurodevocional-ai"
+python -m venv venv_crewai
+.\venv_crewai\Scripts\Activate.ps1
+pip install -r crewai_version\requirements.txt
+cd crewai_version
+streamlit run streamlit_app.py --server.port 8502
+```
 
-- Dois agentes: analista emocional e conselheiro neurodevocional
-- Uso de dados locais
-- Enriquecimento com APIs externas sem chave (ZenQuotes e Bible-API)
+### 3) LangGraph
 
-Diferenca percebida:
+```powershell
+cd "C:\Users\felip_qx82fss\OneDrive\Área de Trabalho\Checkponit Ia Generativa agents\neurodevocional-ai"
+python -m venv venv_langgraph
+.\venv_langgraph\Scripts\Activate.ps1
+pip install -r langgraph_version\requirements.txt
+cd langgraph_version
+streamlit run streamlit_app.py --server.port 8503
+```
 
-- Saida mais autoral e menos engessada
-- Estrategia mais clara de "times de agentes"
+### 4) LlamaIndex
 
-## Versao 3 - LangGraph
+```powershell
+cd "C:\Users\felip_qx82fss\OneDrive\Área de Trabalho\Checkponit Ia Generativa agents\neurodevocional-ai"
+python -m venv venv_llamaindex
+.\venv_llamaindex\Scripts\Activate.ps1
+pip install -r llamaindex_version\requirements.txt
+python -m streamlit run .\llamaindex_version\streamlit_app.py --server.port 8504
+```
 
-Pasta: [langgraph_version](langgraph_version)
+## Variáveis de ambiente
 
-Tema: Planejamento de Viagens
+Crie um arquivo `.env` na raiz com:
 
-Por que usar LangGraph:
+```env
+OPENAI_API_KEY=sua_chave
+```
 
-- Mostrar pipeline por etapas com estado compartilhado
-- Ideal para fluxos previsiveis e rastreaveis
+## Guia de demonstração para o professor
 
-Como funciona:
+Sugestão de apresentação curta (3 a 5 minutos):
 
-- Nos sequenciais: enriquecer destino -> clima -> atracoes -> custo -> relatorio final
-- APIs externas sem chave: Open-Meteo e Wikipedia
+1. Mostrar o problema e a estratégia de comparar frameworks.
+2. Executar LangChain (porta 8501) e explicar tools + memória.
+3. Executar CrewAI (porta 8502) e explicar colaboração entre agentes.
+4. Executar LangGraph (porta 8503) e destacar fluxo por nós/estado.
+5. Executar LlamaIndex (porta 8504) e destacar indexação + síntese de fontes.
+6. Fechar com os trade-offs: orquestração, controle de fluxo e uso de contexto documental.
 
-Diferenca percebida:
+## Diferença humana entre as abordagens
 
-- Clareza total do fluxo de execucao
-- Facil de explicar visualmente na apresentacao
+- LangChain: melhor para começar rápido com agente + tools.
+- CrewAI: melhor para separar responsabilidades entre papéis de agentes.
+- LangGraph: melhor quando o fluxo precisa ser explícito e auditável por etapas.
+- LlamaIndex: melhor quando o coração do problema é trabalhar em cima de documentos e contexto recuperado.
 
-## Versao 4 - LlamaIndex
+## Entrega
 
-Pasta: [llamaindex_version](llamaindex_version)
+Este repositório atende os itens de entrega solicitados:
 
-Tema: Analise e Resumo de Noticias
-
-Por que usar LlamaIndex:
-
-- Foco em indexar e sintetizar documentos
-- Excelente para transformar varias fontes em insight unico
-
-Como funciona:
-
-- Coleta noticias por tema (Hacker News Algolia API)
-- Converte em documentos
-- Cria indice de sumario
-- Gera relatorio executivo com tendencias e recomendacoes
-
-Diferenca percebida:
-
-- Estrategia orientada a conhecimento indexado
-- Muito forte para contexto documental
-
-## Como manter tudo funcionando sem quebrar nada
-
-Cada versao usa ambiente virtual proprio para evitar conflito de dependencias:
-
-- LangChain: venv
-- CrewAI: venv_crewai
-- LangGraph: venv_langgraph
-- LlamaIndex: venv_llamaindex
-
-Essa foi uma decisao de engenharia importante para garantir estabilidade durante testes e apresentacao.
-
-## Conclusao
-
-O projeto nao so implementa agentes, mas demonstra criterio tecnico:
-
-- Cada framework foi usado onde faz mais sentido
-- O desenho das arquiteturas mudou conforme o problema
-- Houve preocupacao com robustez, fallback e organizacao de ambiente
-
-Esse conjunto mostra maturidade de projeto e vai alem de uma prova de conceito simples.
+- Código-fonte completo.
+- Documento de design (este README + READMEs de cada framework).
+- Instruções de execução.
+- Estrutura pronta para demonstração funcional.

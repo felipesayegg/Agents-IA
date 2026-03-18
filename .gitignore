@@ -1,0 +1,21 @@
+# Virtual environments
+venv/
+venv_crewai/
+venv_langgraph/
+venv_llamaindex/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+
+# Environment files
+.env
+.env.*
+
+# OS/editor
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
