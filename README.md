@@ -1,3 +1,8 @@
+# FELIPE SAYEG RM560366
+# Diogo Cedola RM559797
+# Caio Santiago de Oliveira RM559788
+
+
 ## Checkpoint IA Generativa - Comparativo de Frameworks de Agentes
 
 Este repositório apresenta quatro implementações de agentes de IA, cada uma construída com um framework diferente, para comparar arquitetura, experiência de desenvolvimento e adequação ao problema.
